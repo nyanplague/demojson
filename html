@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <body>
+            <span> Hello world</span>
+        <script>
+            function consumeWebService(){
+                fetch("httpx://my-json-server.typicode.com/nyanplague/demojson")
+                .then(response => response.json())
+                .then(json => console.log(json));
+            }
+
+            consumeWebService();
+        </script>
+        </body>
+    </head>
+</html>
